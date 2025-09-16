@@ -6,12 +6,18 @@
         <field name="view_mode">list,form</field>
     </record>
 
-    <record id="estate_view_tree" model="ir.ui.user">
+    <record id="estate_view_tree" model="ir.ui.view">
         <field name="name">estate.list</field>
         <field name="model">estate</field>
         <field name="arch" type="xml">
             <list string="Channel">
-                <field name="name"/>
+                <field name="Title"/>
+                <field name="Postcode"/>
+                <field name="Bedrooms"/>
+                <field name="Living Area (sqm)"/>
+                <field name="Expected Price"/>
+                <field name="Selling Price"/>
+                <field name="Available Form"/>
             </list>
         </field>
     </record>
