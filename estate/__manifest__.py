@@ -6,10 +6,8 @@
     "data": [
         "security/ir.model.access.csv",
         
-        "views/estate_advertisement_views.xml",
-        "views/estate_advertisement_menu.xml",
-        "views/estate_settings_views.xml",
-        "views/estate_settings_menu.xml",
+        "views/estate_views.xml",
+        "views/estate_menu.xml",
     ],
     "installable": True,
     "license": "LGPL-3",
