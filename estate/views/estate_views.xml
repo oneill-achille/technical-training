@@ -24,6 +24,7 @@
                 <field name="expected_price" string="Expected Price"/>
                 <field name="selling_price" string="Selling Price"/>
                 <field name="date_availability" string="Available From"/>
+                <field name="property_type_id" string="Property Type"/>
             </list>
         </field>
     </record>
@@ -41,6 +42,7 @@
                     </div>
                     <group>
                         <group>
+                            <field name="property_type_id" String="Property Type"/>
                             <field name="postcode" String="Postcode"/>
                             <field name="date_availability" string="Available From"/>
                         </group>
@@ -51,6 +53,22 @@
                     </group>
                     <notebook>
                         <page string="Description">
+                            <group>
+                                <group>
+                                    <field name="description" String="Description"/>
+                                    <field name="bedrooms" String="Bedrooms"/>
+                                    <field name="living_area" String="Living Area (sqm)"/>
+                                    <field name="facades" String="Facades"/>
+                                    <field name="garage" String="Garage"/>
+                                    <field name="garden" String="Garden"/>
+                                    <field name="garden_area" String="Garden Area"/>
+                                    <field name="garden_orientation" String="Garden Orientation"/>
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                    <notebook>
+                        <page string="Other Information">
                             <group>
                                 <group>
                                     <field name="description" String="Description"/>
