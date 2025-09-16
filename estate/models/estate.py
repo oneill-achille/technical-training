@@ -35,3 +35,4 @@ class Estate(models.Model):
         copy=False,
         default="new",
     )
+    property_type_id = fields.Many2one("property.type", string="Property Type")
