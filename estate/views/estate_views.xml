@@ -11,7 +11,7 @@
         <field name="model">estate</field>
         <field name="arch" type="xml">
             <list string="Properties">
-                <field name="name" string="Name">
+                <field name="name" string="Name"/>
                 <field name="postcode" string="postcode"/>
                 <field name="bedrooms" string="Bedrooms"/>
                 <field name="living_area" string="Living Area (sqm)"/>
