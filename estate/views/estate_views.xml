@@ -49,8 +49,12 @@
         <field name="model">estate</field>
         <field name="arch" type="xml">
             <search string="Search">
-                <field name="name" string="Carrier"/>
-                <field name="delivery_type"/>
+                <field name="title" string="Title"/>
+                <field name="postcode" string="Postcode"/>
+                <field name="expected_price" string="Expected Price"/>
+                <field name="bedrooms" string="Bedrooms"/>
+                <field name="living_area" string="Living Area"/>
+                <field name="facades" string="Facades"/>
                 <separator/>
             </search>
         </field>
