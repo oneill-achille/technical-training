@@ -49,7 +49,7 @@
         <field name="model">estate</field>
         <field name="arch" type="xml">
             <search string="Search">
-                <field name="title" string="Title"/>
+                <field name="name" string="Title"/>
                 <field name="postcode" string="Postcode"/>
                 <field name="expected_price" string="Expected Price"/>
                 <field name="bedrooms" string="Bedrooms"/>
