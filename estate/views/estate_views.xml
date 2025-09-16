@@ -32,7 +32,7 @@
                         <button name="action_lost_leads" type="object" class="oe_stat_button" icon="fa-star">
                             <div class="o_stat_info">
                                 <field name="leads_count" class="o_stat_value"/>
-                                <h4>Leads</span>
+                                <h4>Leads</h4>
                             </div>
                         </button>
                     </div>
