@@ -13,7 +13,7 @@
             <list string="Properties">
                 <field name="name" string="Name">
                 <field name="postcode" string="postcode"/>
-                <field name="bedrooms" string="Bedrooms">
+                <field name="bedrooms" string="Bedrooms"/>
                 <field name="living_area" string="Living Area (sqm)"/>
                 <field name="expected_price" string="Expected Price"/>
                 <field name="selling_price" string="Selling Price"/>
