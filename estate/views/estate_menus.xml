@@ -5,4 +5,4 @@
             <menuitem id="estate_menu_action" name="Properties" action="estate_action"/>
         </menuitem>
     </menuitem>
-</od0o>
+</odoo>
