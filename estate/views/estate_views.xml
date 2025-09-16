@@ -29,11 +29,10 @@
             <form string="My new house">
                 <sheet>
                     <div class="oe_button_box" name="button_box">
-                        <button name="action_lost_leads" type="object"
-                            class="oe_stat_button" icon="fa-star">
+                        <button name="action_lost_leads" type="object" class="oe_stat_button" icon="fa-star">
                             <div class="o_stat_info">
                                 <field name="leads_count" class="o_stat_value"/>
-                                <span class="o_stat_text"> Leads</span>
+                                <h4>Leads</span>
                             </div>
                         </button>
                     </div>
