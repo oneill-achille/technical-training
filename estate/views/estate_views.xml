@@ -28,23 +28,16 @@
         <field name="arch" type="xml">
             <form string="My new house">
                 <sheet>
-                    <div class="oe_button_box" name="button_box">
-                        <button name="action_lost_leads" type="object" class="oe_stat_button" icon="fa-star">
-                            <div class="o_stat_info">
-                                <field name="leads_count" class="o_stat_value"/>
-                                <h4>Leads</h4>
-                            </div>
-                        </button>
-                    </div>
-                    <widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '=', True)]}"/>
                     <div class="oe_title">
-                        <div class="oe_edit_only">
-                            <label for="name"/>
-                        </div>
                         <h1 class="mb32">
                             <field name="name" class="mb16"/>
                         </h1>
-                        <field name="active" invisible="1"/>
+                        <group>
+                            <group>
+                                <field name="postcode"/>
+                                <field name="date_availability"/>
+                            </group>
+                        </group>
                     </div>
                 </sheet>
             </form>
