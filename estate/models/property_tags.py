@@ -1,7 +1,7 @@
 from odoo import fields, models
 
 
-class PropertyTag(models.Model):
+class PropertyTags(models.Model):
     _name = "property.tags"
     _description = "Property Tags"
 
