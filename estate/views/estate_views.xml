@@ -11,8 +11,8 @@
         <field name="model">estate</field>
         <field name="arch" type="xml">
             <list string="Properties">
-                <field name="name" string="Name"/>
-                <field name="postcode" string="postcode"/>
+                <field name="name" string="Title"/>
+                <field name="postcode" string="Postcode"/>
                 <field name="bedrooms" string="Bedrooms"/>
                 <field name="living_area" string="Living Area (sqm)"/>
                 <field name="expected_price" string="Expected Price"/>
@@ -44,18 +44,20 @@
                         </group>
                     </group>
                     <notebook>
-                        <group>
+                        <page string="Description">
                             <group>
-                                <field name="description" String="Description"/>
-                                <field name="bedrooms" String="Bedrooms"/>
-                                <field name="living_area" String="Living Area (sqm)"/>
-                                <field name="facades" String="Facades"/>
-                                <field name="garage" String="Garage"/>
-                                <field name="garden" String="Garden"/>
-                                <field name="garden_area" String="Garden Area"/>
-                                <field name="garden_orientation" String="Garden Orientation"/>
+                                <group>
+                                    <field name="description" String="Description"/>
+                                    <field name="bedrooms" String="Bedrooms"/>
+                                    <field name="living_area" String="Living Area (sqm)"/>
+                                    <field name="facades" String="Facades"/>
+                                    <field name="garage" String="Garage"/>
+                                    <field name="garden" String="Garden"/>
+                                    <field name="garden_area" String="Garden Area"/>
+                                    <field name="garden_orientation" String="Garden Orientation"/>
+                                </group>
                             </group>
-                        </group>
+                        </page>
                     </notebook>
                 </sheet>
             </form>
