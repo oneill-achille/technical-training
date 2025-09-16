@@ -7,6 +7,7 @@
         "security/ir.model.access.csv",
         
         "views/estate_views.xml",
+        "views/estate_menus.xml",
     ],
     "installable": True,
     "license": "LGPL-3",
