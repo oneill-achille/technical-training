@@ -63,29 +63,28 @@
                             </group>
                         </page>
                     </notebook>
-                    <notebook>
-                    </sheet>
-                </form>
-            </field>
-        </record>
+                </sheet>
+            </form>
+        </field>
+    </record>
 
-        <record id="estate_advertisement_view_search" model="ir.ui.view">
-            <field name="name">estate.advertisement.search</field>
-            <field name="model">estate</field>
-            <field name="arch" type="xml">
-                <search string="Search">
-                    <field name="name" string="Title"/>
-                    <field name="postcode" string="Postcode"/>
-                    <field name="expected_price" string="Expected Price"/>
-                    <field name="bedrooms" string="Bedrooms"/>
-                    <field name="living_area" string="Living Area"/>
-                    <field name="facades" string="Facades"/>
-                    <separator/>
-                    <filter string="Available" name="state" domain="[('state', 'in', ['new', 'offer_received'])]"/>
-                    <group>
-                        <filter string="Postcode" name="postcode" context="{'group_by':'postcode'}"/>
-                    </group>
-                </search>
-            </field>
-        </record>
-    </odoo>
+    <record id="estate_advertisement_view_search" model="ir.ui.view">
+        <field name="name">estate.advertisement.search</field>
+        <field name="model">estate</field>
+        <field name="arch" type="xml">
+            <search string="Search">
+                <field name="name" string="Title"/>
+                <field name="postcode" string="Postcode"/>
+                <field name="expected_price" string="Expected Price"/>
+                <field name="bedrooms" string="Bedrooms"/>
+                <field name="living_area" string="Living Area"/>
+                <field name="facades" string="Facades"/>
+                <separator/>
+                <filter string="Available" name="state" domain="[('state', 'in', ['new', 'offer_received'])]"/>
+                <group>
+                    <filter string="Postcode" name="postcode" context="{'group_by':'postcode'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+</odoo>
