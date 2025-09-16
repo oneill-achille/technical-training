@@ -8,6 +8,7 @@
         
         "views/estate_views.xml",
         "views/estate_advertisement.xml",
+        "views/estate_settings.xml",
     ],
     "installable": True,
     "license": "LGPL-3",
