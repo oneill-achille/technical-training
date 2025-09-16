@@ -9,7 +9,8 @@ class Estate(models.Model):
     description = fields.Text(string="Description")
     postcode = fields.Char(string="Postcode")
     date_availability = fields.Date(
-        string="Date Availability", default=fields.Datetime.now
+        string="Date Availability",
+        default=lambda self: fields.Date.add(fields.Date.today(), months=3),
     )
     expected_price = fields.Float(string="Expected Price", required=True)
     selling_price = fields.Float(string="Selling Price", readonly=True, copy=False)
@@ -36,3 +37,7 @@ class Estate(models.Model):
         default="new",
     )
     property_type_id = fields.Many2one("property.type", string="Property Type")
+    salesperson_id = fields.Many2one(
+        "res.users", string="Salesperson", default=lambda self: self.env.user
+    )
+    buyer_id = fields.Many2one("res.partner", string="Buyer", copy=False)

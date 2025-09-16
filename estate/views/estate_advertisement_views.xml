@@ -60,6 +60,14 @@
                                 </group>
                             </group>
                         </page>
+                        <page string="Other Information">
+                            <group>
+                                <group>
+                                    <field name="salesperson_id" String="Salesman"/>
+                                    <field name="buyer_id" String="Buyer"/>
+                                </group>
+                            </group>
+                        </page>
                     </notebook>
                 </sheet>
             </form>
