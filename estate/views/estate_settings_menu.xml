@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="estate_settings_root" name="Real Estate">
+        <menuitem id="estate_settings_menu" name="Settings">
+            <menuitem id="estate_settings_menu_action" name="Properties" action="estate_settings_action"/>
+        </menuitem>
+    </menuitem>
+</odoo>
