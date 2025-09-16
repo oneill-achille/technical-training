@@ -26,19 +26,37 @@
         <field name="name">estate.form</field>
         <field name="model">estate</field>
         <field name="arch" type="xml">
-            <form string="My new house">
+            <form string="Property">
                 <sheet>
                     <div class="oe_title">
                         <h1 class="mb32">
                             <field name="name" class="mb16"/>
                         </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="postcode" String="Postcode"/>
+                            <field name="date_availability" string="Available From"/>
+                        </group>
+                        <group>
+                            <field name="expected_price" String="Expected Price"/>
+                            <field name="selling_price" string="Selling Price"/>
+                        </group>
+                    </group>
+                    <notebook>
                         <group>
                             <group>
-                                <field name="postcode"/>
-                                <field name="date_availability"/>
+                                <field name="description" String="Description"/>
+                                <field name="bedrooms" String="Bedrooms"/>
+                                <field name="living_area" String="Living Area (sqm)"/>
+                                <field name="facades" String="Facades"/>
+                                <field name="garage" String="Garage"/>
+                                <field name="garden" String="Garden"/>
+                                <field name="garden_area" String="Garden Area"/>
+                                <field name="garden_orientation" String="Garden Orientation"/>
                             </group>
                         </group>
-                    </div>
+                    </notebook>
                 </sheet>
             </form>
         </field>
