@@ -11,13 +11,13 @@
         <field name="model">estate</field>
         <field name="arch" type="xml">
             <list string="Properties">
-                <field name="name">Name</field>
-                <field name="postcode">Postcode</field>
-                <field name="bedrooms">Bedrooms</field>
-                <field name="living_area">Living Area (sqm)</field>
-                <field name="expected_price">Expected Price</field>
-                <field name="selling_price">Selling Price</field>
-                <field name="date_availability">Available From</field>
+                <field name="name" string="Name">
+                <field name="postcode" string="postcode"/>
+                <field name="bedrooms" string="Bedrooms">
+                <field name="living_area" string="Living Area (sqm)"/>
+                <field name="expected_price" string="Expected Price"/>
+                <field name="selling_price" string="Selling Price"/>
+                <field name="date_availability" string="Available From"/>
             </list>
         </field>
     </record>
@@ -48,6 +48,22 @@
                     </div>
                 </sheet>
             </form>
+        </field>
+    </record>
+
+    <record id="estate_view_search" model="ir.ui.view">
+        <field name="name">estate.search</field>
+        <field name="model">estate</field>
+        <field name="arch" type="xml">
+            <search string="Search">
+                <field name="name" string="Carrier" />
+                <field name="delivery_type"/>
+                <separator/>
+                <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+                <group expand="1" string="Group By">
+                    <filter string="Provider" name="provider" context="{'group_by':'delivery_type', 'residual_visible':True}"/>
+                </group>
+            </search>
         </field>
     </record>
 </odoo>
