@@ -8,5 +8,9 @@
         <menuitem id="estate_settings_menu" name="Settings">
             <menuitem id="estate_settings_menu_action" name="Property Type" action="estate_settings_action"/>
         </menuitem>
+
+        <menuitem id="estate_tags_menu" name="Tags">
+            <menuitem id="estate_tags_menu_action" name="Property Tags" action="estate_tags_action"/>
+        </menuitem>
     </menuitem>
 </odoo>
