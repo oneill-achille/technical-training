@@ -1,13 +1,15 @@
 {
-    "name": "Estate",  # The name that will appear in the App list
-    "version": "18.0.0.0.20",  # Version
-    "application": True,  # This line says the module is an App, and not a module
-    "depends": ["base"],  # dependencies
+    "name": "Estate",
+    "version": "18.0.0.0.40",
+    "application": True,
+    "depends": ["base"],
     "data": [
+        # Security
         "security/ir.model.access.csv",
-        
+        # Views
         "views/estate_advertisement_views.xml",
         "views/estate_settings_views.xml",
+        "views/estate_tags_views.xml",
         "views/estate_menu.xml",
     ],
     "installable": True,
