@@ -61,6 +61,15 @@
                                 </group>
                             </group>
                         </page>
+                        <page string="Offers">
+                            <group>
+                                <group>
+                                    <field name="price" String="Price"/>
+                                    <field name="partner" String="Partner"/>
+                                    <field name="status" String="Status"/>
+                                </group>
+                            </group>
+                        </page>
                         <page string="Other Information">
                             <group>
                                 <group>

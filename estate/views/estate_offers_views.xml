@@ -11,7 +11,9 @@
         <field name="model">offer</field>
         <field name="arch" type="xml">
             <list string="Property Type">
-                <field name="name" string="Property Name"/>
+                <field name="price" string="Price"/>
+                <field name="partner" string="Partner"/>
+                <field name="status" string="Status"/>
             </list>
         </field>
     </record>
@@ -22,11 +24,13 @@
         <field name="arch" type="xml">
             <form string="Property Type">
                 <sheet>
-                    <div class="oe_title">
-                        <h1 class="mb32">
-                            <field name="name" class="mb16"/>
-                        </h1>
-                    </div>
+                    <group>
+                        <group>
+                            <field name="price" String="Price"/>
+                            <field name="partner" String="Partner"/>
+                            <field name="status" string="Status"/>
+                        </group>
+                    </group>
                 </sheet>
             </form>
         </field>
