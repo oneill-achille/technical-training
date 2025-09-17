@@ -63,8 +63,8 @@
                                     <field name="facades" String="Facades"/>
                                     <field name="garage" String="Garage"/>
                                     <field name="garden" String="Garden"/>
-                                    <field name="garden_area" String="Garden Area (sqm)"/>
-                                    <field name="garden_orientation" String="Garden Orientation"/>
+                                    <field name="garden_area" String="Garden Area (sqm)" invisible="not garden"/>
+                                    <field name="garden_orientation" String="Garden Orientation" invisible="not garden"/>
                                     <field name="total_area" String="Total Area"/>
                                 </group>
                             </group>

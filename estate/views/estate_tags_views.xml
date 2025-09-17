@@ -27,6 +27,9 @@
                             <field name="name" class="mb16"/>
                         </h1>
                     </div>
+                    <group>
+                        <field name="color"/>
+                    </group>
                 </sheet>
             </form>
         </field>
