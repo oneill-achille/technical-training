@@ -33,14 +33,14 @@ class Estate(models.Model):
             if property.state == "cancelled":
                 raise UserError("Cancelled properties cannot be sold.")
 
-            property.state == "sold"
-            
+            property.state = "sold"
+
     def action_cancel_property(self):
         for property in self:
             if property.state == "sold":
                 raise UserError("Sold properties cannot be cancelled.")
 
-            property.state == "cancelled"
+            property.state = "cancelled"
 
     # Properties
     name = fields.Char(string="Name", default="Unknown")
