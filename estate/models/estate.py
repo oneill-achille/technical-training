@@ -64,7 +64,7 @@ class Estate(models.Model):
             if property.state not in ("new", "cancelled"):
                 raise UserError("Only new and/or cancelled properties can be deleted. ")
 
-    @api.model.create_multi
+    @api.model_create_multi
     def create(self, vals_list):
         for vals in vals_list:
             property = self.env["estate"].browse(vals["property_id"])
