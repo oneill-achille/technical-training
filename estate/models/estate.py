@@ -100,7 +100,7 @@ class Estate(models.Model):
     best_offer = fields.Integer(compute="_compute_best_offer", string="Best Offer")
 
     # Constraints
-    sql_constraints = [
+    _sql_constraints = [
         (
             "check_expected_price",
             "CHECK(expected_price >= 0)",

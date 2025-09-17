@@ -41,7 +41,7 @@ class Offer(models.Model):
     )
 
     # Constraints
-    sql_constraints = [
+    _sql_constraints = [
         (
             "check_price",
             "CHECK(price > 0)",
