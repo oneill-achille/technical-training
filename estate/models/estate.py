@@ -6,6 +6,7 @@ from odoo.tools.float_utils import float_is_zero, float_compare
 class Estate(models.Model):
     _name = "estate"
     _description = "Estate"
+    _order = "id desc"
 
     # Functions
     @api.depends("garden_area", "living_area")

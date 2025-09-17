@@ -4,6 +4,7 @@ from odoo import fields, models
 class PropertyTag(models.Model):
     _name = "property.tag"
     _description = "Property Tag"
+    _order = "name desc"
 
     name = fields.Char(string="Property Tag")
 

@@ -4,6 +4,7 @@ from odoo import api, fields, models
 class Offer(models.Model):
     _name = "offer"
     _description = "Offer"
+    _order = "price desc"
 
     # Functions
     @api.depends("date_deadline", "validity")
