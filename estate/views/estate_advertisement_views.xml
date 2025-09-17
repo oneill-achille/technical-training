@@ -63,11 +63,11 @@
                         </page>
                         <page string="Offers">
                             <field name="offers_ids">
-                                <tree>
+                                <list string="Offers">
                                     <field name="price"/>
                                     <field name="partner_id"/>
                                     <field name="status"/>
-                                </tree>
+                                </list>
                             </field>
                         </page>
                         <page string="Other Information">
