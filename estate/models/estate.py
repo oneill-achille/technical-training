@@ -58,6 +58,25 @@ class Estate(models.Model):
                     "The selling price must be lower than 90% of the expected price."
                 )
 
+    @api.ondelete(at_uninstall=False)
+    def _unlink_if_new_cancelled(self):
+        for property in self:
+            if property.state not in ("new", "cancelled"):
+                raise UserError("Only new and/or cancelled properties can be deleted. ")
+
+    @api.model.create_multi
+    def create(self, vals_list):
+        for vals in vals_list:
+            property = self.env["estate"].browse(vals["property_id"])
+            if property.offers_ids:
+                min_price = min(property.offers_ids.mapped("price"))
+                if vals["price"] <= min_price:
+                    raise ValidationError(
+                        "The offer price must be higher than %s." % min_price
+                    )
+            property.state = "offer_received"
+        return super().create(vals_list)
+
     # Properties
     name = fields.Char(string="Name", default="Unknown")
     description = fields.Text(string="Description")
