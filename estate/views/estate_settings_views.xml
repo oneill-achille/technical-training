@@ -32,7 +32,7 @@
                             <list string="Properties">
                                 <field name="name" string="Title"/>
                                 <field name="expected_price" string="Expected Price"/>
-                                <field name="status" string="Status"/>
+                                <field name="state" string="Status"/>
                             </list>
                         </field>
                     </group>
