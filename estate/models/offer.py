@@ -39,3 +39,12 @@ class Offer(models.Model):
         compute="_compute_date_deadline",
         inverse="_inverse_date_deadline",
     )
+
+    # Constraints
+    sql_constraints = [
+        (
+            "check_price",
+            "CHECK(price > 0)",
+            "Price must be strictly positive.",
+        ),
+    ]
