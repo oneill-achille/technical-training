@@ -10,6 +10,7 @@
         "views/estate_advertisement_views.xml",
         "views/estate_settings_views.xml",
         "views/estate_tags_views.xml",
+        "views/estate_offers_views.xml",
         "views/estate_menu.xml",
     ],
     "installable": True,
