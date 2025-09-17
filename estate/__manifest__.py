@@ -1,6 +1,6 @@
 {
     "name": "Estate",
-    "version": "18.0.0.0.40",
+    "version": "18.0.0.0.50",
     "application": True,
     "depends": ["base"],
     "data": [
