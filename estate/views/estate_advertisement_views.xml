@@ -37,13 +37,13 @@
                     <div class="oe_title">
                         <h1 class="mb32">
                             <field name="name" class="mb16"/>
-                            <field name="tags_ids" widget="many2many_tags"/>
+                            <field name="tags_ids" widget="many2many_tags" options="{'color_field': 'color'}" />
                         </h1>
                     </div>
                     <group>
                         <group>
                             <field name="state" String="State"/>
-                            <field name="property_type_id" String="Property Type" options="{'no_create': true, 'no_edit': true}" widget="many2many_tags" options="{'color_field': 'color'}" />
+                            <field name="property_type_id" String="Property Type" options="{'no_create': true, 'no_edit': true}"/>
                             <field name="postcode" String="Postcode"/>
                             <field name="date_availability" string="Available From"/>
                         </group>
