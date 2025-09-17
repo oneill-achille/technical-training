@@ -27,6 +27,15 @@
                             <field name="name" class="mb16"/>
                         </h1>
                     </div>
+                    <group>
+                        <field name="property_ids">
+                            <list string="Properties">
+                                <field name="name" string="Title"/>
+                                <field name="expected_price" string="Expected Price"/>
+                                <field name="status" string="Status"/>
+                            </list>
+                        </field>
+                    </group>
                 </sheet>
             </form>
         </field>
