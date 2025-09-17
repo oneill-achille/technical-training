@@ -5,6 +5,13 @@ class Estate(models.Model):
     _name = "estate"
     _description = "Estate"
 
+    # Functions
+    @api.depends("garden_area", "living_area")
+    def _compute_total_area(self):
+        for property in self:
+            property.total_area = property.garden_area + property.living_area
+
+    # Properties
     name = fields.Char(string="Name", default="Unknown")
     description = fields.Text(string="Description")
     postcode = fields.Char(string="Postcode")
@@ -43,3 +50,4 @@ class Estate(models.Model):
     )
     buyer_id = fields.Many2one("res.partner", string="Buyer", copy=False)
     offers_ids = fields.One2many("offer", "property_id", string="Offers")
+    total_area = fields.Integer(compute="_compute_total_area", string="Total Area")

@@ -56,8 +56,9 @@
                                     <field name="facades" String="Facades"/>
                                     <field name="garage" String="Garage"/>
                                     <field name="garden" String="Garden"/>
-                                    <field name="garden_area" String="Garden Area"/>
+                                    <field name="garden_area" String="Garden Area (sqm)"/>
                                     <field name="garden_orientation" String="Garden Orientation"/>
+                                    <field name="total_area" String="Total Area"/>
                                 </group>
                             </group>
                         </page>
