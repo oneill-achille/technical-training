@@ -1,18 +1,21 @@
 {
-    "name": "Estate",
-    "version": "18.0.0.0.50",
-    "application": True,
-    "depends": ["base"],
-    "data": [
-        # Security
-        "security/ir.model.access.csv",
-        # Views
-        "views/estate_advertisement_views.xml",
-        "views/estate_settings_views.xml",
-        "views/estate_tags_views.xml",
-        "views/estate_offers_views.xml",
-        "views/estate_menu.xml",
-    ],
-    "installable": True,
+    "name": "estate",
+    "description": """
+        Module to deal with estate sales."
+    """,
     "license": "LGPL-3",
+    "category": "Real Estate/Brokerage",
+    "data": [
+        "views/estate_property_offer_views.xml",
+        "views/estate_property_views.xml",
+        "views/estate_property_type_views.xml",
+        "views/estate_property_tags_views.xml",
+        "views/estate_user.xml",
+        "views/estate_menus.xml",
+        "security/security.xml",
+        "data/master_data.xml",
+        "security/ir.model.access.csv",
+    ],
+    "demo": ["demo/demo_data.xml"],
+    "application": True,
 }
