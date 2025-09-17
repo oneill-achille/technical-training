@@ -21,7 +21,7 @@
                     <group>
                         <group>
                             <field name="price" String="Price"/>
-                            <field name="partner" String="Partner"/>
+                            <field name="partner_id" String="Partner"/>
                             <field name="status" string="Status"/>
                         </group>
                     </group>
