@@ -20,3 +20,4 @@ class PropertyType(models.Model):
         ],
         string="Status",
     )
+    sequence = fields.Integer(string="Sequence", default=1)

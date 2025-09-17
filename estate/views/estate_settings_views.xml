@@ -11,6 +11,7 @@
         <field name="model">property.type</field>
         <field name="arch" type="xml">
             <list string="Property Type">
+                <field name="sequence" widget="handle"/>
                 <field name="name" string="Property Name"/>
             </list>
         </field>
@@ -30,6 +31,7 @@
                     <group>
                         <field name="property_ids">
                             <list string="Properties">
+                                <field name="sequence" widget="handle"/>
                                 <field name="name" string="Title"/>
                                 <field name="expected_price" string="Expected Price"/>
                                 <field name="state" string="Status"/>
