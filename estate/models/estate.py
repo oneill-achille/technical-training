@@ -37,7 +37,7 @@ class Estate(models.Model):
         default="new",
     )
     property_type_id = fields.Many2one("property.type", string="Property Type")
-    tags_ids = fields.Many2many("property.tags", string="Tags")
+    tags_ids = fields.Many2many("property.tag", string="Tag")
     salesperson_id = fields.Many2one(
         "res.users", string="Salesperson", default=lambda self: self.env.user
     )
