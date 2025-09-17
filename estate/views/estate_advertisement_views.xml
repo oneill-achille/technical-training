@@ -41,6 +41,7 @@
                     </div>
                     <group>
                         <group>
+                            <field name="state" String="State"/>
                             <field name="property_type_id" String="Property Type"/>
                             <field name="postcode" String="Postcode"/>
                             <field name="date_availability" string="Available From"/>

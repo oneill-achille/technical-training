@@ -16,6 +16,11 @@ class Offer(models.Model):
         for record in self:
             record.validity = (record.date_deadline - fields.Date.to_date(record.create_date)).days
 
+    def action_accept_offer(self):
+        self.status = "accepted"
+        self.property_id.selling_price = self.price
+        self.property_id.buyer_id = self.partner_id
+        
     # Attributes
     price = fields.Float(string="Price")
     status = fields.Selection(
