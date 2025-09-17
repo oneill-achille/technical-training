@@ -18,8 +18,9 @@ class Offer(models.Model):
 
     def action_accept_offer(self):
         self.status = "accepted"
-        self.property_id.selling_price = self.price
-        self.property_id.buyer_id = self.partner_id
+        
+    def action_refuse_offer(self):
+        self.status = "refused"
         
     # Attributes
     price = fields.Float(string="Price")
