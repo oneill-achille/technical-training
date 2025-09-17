@@ -2,3 +2,4 @@
 access_estate_model,access_estate_model,model_estate,base.group_user,1,1,1,1
 access_property_type_model,access_property_type_model,model_property_type,base.group_user,1,1,1,1
 access_property_tag_model,access_property_tag_model,model_property_tag,base.group_user,1,1,1,1
+access_offer_model,v,model_offer,base.group_user,1,1,1,1
