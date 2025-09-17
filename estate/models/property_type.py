@@ -6,6 +6,7 @@ class PropertyType(models.Model):
     _description = "Property Type"
     _order = "name desc"
 
+    # Attributes
     name = fields.Char(string="Property Type", required=True)
     property_ids = fields.One2many("estate", "property_type_id", string="Properties")
     title = fields.Char(string="Title")
