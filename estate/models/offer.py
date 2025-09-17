@@ -14,14 +14,18 @@ class Offer(models.Model):
 
     def _inverse_date_deadline(self):
         for record in self:
-            record.validity = (record.date_deadline - fields.Date.to_date(record.create_date)).days
+            record.validity = (
+                record.date_deadline - fields.Date.to_date(record.create_date)
+            ).days
 
     def action_accept_offer(self):
         self.status = "accepted"
-        
+        for property in self.property_id:
+            property.selling_price = self.price
+
     def action_refuse_offer(self):
         self.status = "refused"
-        
+
     # Attributes
     price = fields.Float(string="Price")
     status = fields.Selection(
