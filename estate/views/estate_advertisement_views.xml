@@ -43,6 +43,7 @@
                         </group>
                         <group>
                             <field name="expected_price" String="Expected Price"/>
+                            <field name="best_offer" String="Best Offer"/>
                             <field name="selling_price" string="Selling Price"/>
                         </group>
                     </group>
