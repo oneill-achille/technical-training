@@ -1,16 +1,10 @@
 <?xml version="1.0"?>
 <odoo>
-    <record id="estate_offers_action" model="ir.actions.act_window">
-        <field name="name">Estate Tags Action</field>
-        <field name="res_model">offer</field>
-        <field name="view_mode">list,form</field>
-    </record>
-
     <record id="estate_offers_view_tree" model="ir.ui.view">
         <field name="name">estate.list</field>
         <field name="model">offer</field>
         <field name="arch" type="xml">
-            <list string="Property Type">
+            <list string="Offer">
                 <field name="price" string="Price"/>
                 <field name="partner" string="Partner"/>
                 <field name="status" string="Status"/>
@@ -22,7 +16,7 @@
         <field name="name">estate.form</field>
         <field name="model">offer</field>
         <field name="arch" type="xml">
-            <form string="Property Type">
+            <form string="Offer">
                 <sheet>
                     <group>
                         <group>

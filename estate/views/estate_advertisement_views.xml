@@ -62,13 +62,13 @@
                             </group>
                         </page>
                         <page string="Offers">
-                            <group>
-                                <group>
-                                    <field name="price" String="Price"/>
-                                    <field name="partner" String="Partner"/>
-                                    <field name="status" String="Status"/>
-                                </group>
-                            </group>
+                            <field name="offers_ids">
+                                <tree>
+                                    <field name="price"/>
+                                    <field name="partner_id"/>
+                                    <field name="status"/>
+                                </tree>
+                            </field>
                         </page>
                         <page string="Other Information">
                             <group>
