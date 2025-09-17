@@ -1,4 +1,4 @@
-from odoo import models, fields
+from odoo import api, models, fields
 
 
 class Estate(models.Model):
@@ -10,6 +10,14 @@ class Estate(models.Model):
     def _compute_total_area(self):
         for property in self:
             property.total_area = property.garden_area + property.living_area
+
+    @api.depends("offers_ids.price")
+    def _compute_best_offer(self):
+        for property in self:
+            if property.offers_ids:
+                property.best_offer = max(property.offers_ids.mapped("price"))
+            else:
+                property.best_offer = 0
 
     # Properties
     name = fields.Char(string="Name", default="Unknown")
@@ -51,3 +59,4 @@ class Estate(models.Model):
     buyer_id = fields.Many2one("res.partner", string="Buyer", copy=False)
     offers_ids = fields.One2many("offer", "property_id", string="Offers")
     total_area = fields.Integer(compute="_compute_total_area", string="Total Area")
+    best_offer = fiels.Integer(compute="_compute_best_offer", string="Best Offer")
