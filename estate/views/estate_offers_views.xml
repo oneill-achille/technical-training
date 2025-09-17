@@ -6,7 +6,7 @@
         <field name="arch" type="xml">
             <list string="Offer">
                 <field name="price" string="Price"/>
-                <field name="partner" string="Partner"/>
+                <field name="partner_id" string="Partner"/>
                 <field name="status" string="Status"/>
             </list>
         </field>
