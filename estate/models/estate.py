@@ -59,4 +59,4 @@ class Estate(models.Model):
     buyer_id = fields.Many2one("res.partner", string="Buyer", copy=False)
     offers_ids = fields.One2many("offer", "property_id", string="Offers")
     total_area = fields.Integer(compute="_compute_total_area", string="Total Area")
-    best_offer = fiels.Integer(compute="_compute_best_offer", string="Best Offer")
+    best_offer = fields.Integer(compute="_compute_best_offer", string="Best Offer")
