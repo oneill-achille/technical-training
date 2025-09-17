@@ -1,3 +1,4 @@
+
 from odoo import fields, models
 
 
@@ -5,7 +6,7 @@ class Offer(models.Model):
     _name = "offer"
     _description = "Offer"
 
-    price = fields.float(string="Price")
+    price = fields.Float(string="Price")
     status = fields.Selection(
         [("accepted", "Accepted"), ("refused", "Refused")], string="Status", copy=False
     )
