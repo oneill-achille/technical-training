@@ -19,7 +19,7 @@
     <record id="estate_offers_view_form" model="ir.ui.view">
         <field name="name">estate.form</field>
         <field name="model">offer</field>
-        <field name="arch" type="xml">
+        <field name="arch" type="xml" invisible="state in ['offer_accepted','sold','cancelled']">
             <form string="Offer">
                 <sheet>
                     <group>
